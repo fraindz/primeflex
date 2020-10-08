@@ -39,14 +39,14 @@ Default direction is "row" and **p-dir-\*** class at the container defines the o
 </div>
 ```
 
-### 12 Column Grid
-FlexGrid includes a 12 column based layout utility where width of a column is defined with the **p-col-{number}** style class. Columns with prefined widths can be used with columns with auto width (p-col) as well.
+### 24 Column Grid
+FlexGrid includes a 24 column based layout utility where width of a column is defined with the **p-col-{number}** style class. Columns with prefined widths can be used with columns with auto width (p-col) as well.
 
-In the first example below, first column covers the 4 units out of 12 and the rest of the columns share the remaining space whereas in the second example, all three columns have explicit units.
+In the first example below, first column covers the 8 units out of 24 and the rest of the columns share the remaining space whereas in the second example, all three columns have explicit units.
 
 ```html
 <div class="p-grid">
-    <div class="p-col-4">4</div>
+    <div class="p-col-8">8</div>
     <div class="p-col">1 </div>
     <div class="p-col">1 </div>
     <div class="p-col">1 </div>
@@ -58,20 +58,20 @@ In the first example below, first column covers the 4 units out of 12 and the re
 </div>
 
 <div class="p-grid">
-    <div class="p-col-2">2</div>
+    <div class="p-col-8">8</div>
     <div class="p-col-6">6</div>
-    <div class="p-col-4">4</div>
+    <div class="p-col-10">10</div>
 </div>
 ```
 
 ### Multi Line
-When the number of columns exceed 12, columns wrap to a new line.
+When the number of columns exceed 24, columns wrap to a new line.
 
 ```html
 <div class="p-grid">
-    <div class="p-col-6">6</div>
-    <div class="p-col-6">6</div>
-    <div class="p-col-6">6</div>
+    <div class="p-col-8">8</div>
+    <div class="p-col-8">8</div>
+    <div class="p-col-8">8</div>
     <div class="p-col-6">6</div>
 </div>
 ```
@@ -96,7 +96,6 @@ Responsive layout is achieved by applying breakpoint specific classes to the col
 * p-xl-\* : min-width 1200px
 
 In example below, large screens display 4 columns, medium screens display 2 columns in 2 rows and finally on small devices, columns are stacked.
-
 
 ```html
 <div class="p-grid">
@@ -179,7 +178,7 @@ Offset classes allow defining a left margin on a column to avoid adding empty co
 </div>
 ```
 
-The list of offset classes varying within a range of 1 to 12.
+The list of offset classes varying within a range of 1 to 24.
 
 * p-col-offset-\* : All screens
 * p-sm-offset-\* : min-width: 576px
